@@ -1,14 +1,14 @@
 Grundlage
 ---------
 
-The basis of something
+> The basis of something
 
 Extensions
 ==========
 
 - [x] Dapper
 - [ ] NHibernate
-- [ ] Newtonsoft JSON.Net
+- [x] Newtonsoft JSON.Net
 - [ ] Serilog
 - [ ] MVC Model Binding
 - [ ] WebApi Model Binding
