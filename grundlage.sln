@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grundlage", "grundlage\grundlage.csproj", "{2B247B11-DD9A-4562-AE36-E8B2B646897F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grundlage", "src\grundlage\grundlage.csproj", "{2B247B11-DD9A-4562-AE36-E8B2B646897F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grundlage.tests", "grundlage.tests\grundlage.tests.csproj", "{B5E473EB-ED93-4D92-A992-30300D1139AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grundlage.tests", "src\grundlage.tests\grundlage.tests.csproj", "{B5E473EB-ED93-4D92-A992-30300D1139AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{4FAF05A2-6798-495D-AE76-BC8D086EFC7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
