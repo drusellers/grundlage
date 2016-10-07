@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace grundlage.jsonnet
 {
-    public abstract class BaseJsonConverter<TValueType, TPrimitive> : JsonConverter
+    public abstract class BasePrimitiveJsonConverter<TValueType, TPrimitive> : JsonConverter
         where TValueType : class, ValueType<TPrimitive>
         where TPrimitive : IComparable<TPrimitive>, IEquatable<TPrimitive>, IComparable
     {

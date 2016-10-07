@@ -4,7 +4,7 @@ using Dapper;
 
 namespace grundlage.dapper
 {
-    public abstract class BaseTypeHandler<TValueType, TPrimitive>
+    public abstract class BasePrimitiveTypeHandler<TValueType, TPrimitive>
         : SqlMapper.ITypeHandler
         where TValueType : class, ValueType<TPrimitive>
         where TPrimitive : IComparable<TPrimitive>, IEquatable<TPrimitive>, IComparable
