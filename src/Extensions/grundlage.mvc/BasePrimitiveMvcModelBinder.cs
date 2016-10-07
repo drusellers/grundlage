@@ -3,7 +3,7 @@ using System.Web.Mvc;
 
 namespace grundlage.mvc
 {
-    public abstract class BasePrimitiveModelBinder<TMicroType, TPrimitive> : IModelBinder
+    public abstract class BasePrimitiveMvcModelBinder<TMicroType, TPrimitive> : IModelBinder
         where TMicroType : ValueType<TPrimitive>
         where TPrimitive : IComparable<TPrimitive>, IEquatable<TPrimitive>, IComparable
     {
