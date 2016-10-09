@@ -7,7 +7,7 @@ Extensions
 ==========
 
 - [x] Dapper
-- [ ] NHibernate
+- [x] NHibernate
 - [x] Newtonsoft JSON.Net
 - [x] Serilog
 - [x] MVC Model Binding
