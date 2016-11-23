@@ -28,6 +28,13 @@ namespace grundlage.tests
         }
 
         [Test]
+        public void GrundlageDefault_Deserialization()
+        {
+            var payload = JsonConvert.DeserializeObject<GrundlagePrimitive>("\"abc\"");
+            payload.ShouldBe(new GrundlagePrimitive("abc"));
+        }
+
+        [Test]
         public void JsonDefault()
         {
             var payload = JsonConvert.SerializeObject(new TraditionalPrimitive("abc"));
@@ -48,10 +55,15 @@ namespace grundlage.tests
         {
 
         }
-        public class GrundlagePrimitive : Primitive<string>
+        public class GrundlagePrimitive : Primitive<string>, IComparable
         {
             public GrundlagePrimitive(string primitiveValue) : base(primitiveValue)
             {
+            }
+
+            public override bool Equals(object obj)
+            {
+                return base.Equals(obj);
             }
         }
 
