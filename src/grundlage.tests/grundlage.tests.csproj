@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="nunit.framework, Version=3.4.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.4.1\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
@@ -43,12 +47,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HandleTests.cs" />
+    <Compile Include="JsonConversionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Extensions\grundlage.dapper\grundlage.dapper.csproj">
+      <Project>{659ca024-6995-4da0-8f9c-1a83595892ca}</Project>
+      <Name>grundlage.dapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extensions\grundlage.jsonnet\grundlage.jsonnet.csproj">
+      <Project>{0a3bed2d-ca23-4ca0-af94-14b06474b74c}</Project>
+      <Name>grundlage.jsonnet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extensions\grundlage.mvc\grundlage.mvc.csproj">
+      <Project>{b3411309-bebd-412e-bcab-d0cb507a39b0}</Project>
+      <Name>grundlage.mvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extensions\grundlage.nhibernate\grundlage.nhibernate.csproj">
+      <Project>{72abb793-5377-495e-8f50-386924e07c92}</Project>
+      <Name>grundlage.nhibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extensions\grundlage.serilog\grundlage.serilog.csproj">
+      <Project>{0813d9f7-896a-4c33-823f-163b1ae6f1da}</Project>
+      <Name>grundlage.serilog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Extensions\grundlage.webapi\grundlage.webapi.csproj">
+      <Project>{47c974a7-3580-4bbd-a55b-23a114df7436}</Project>
+      <Name>grundlage.webapi</Name>
+    </ProjectReference>
     <ProjectReference Include="..\grundlage\grundlage.csproj">
       <Project>{2b247b11-dd9a-4562-ae36-e8b2b646897f}</Project>
       <Name>grundlage</Name>
